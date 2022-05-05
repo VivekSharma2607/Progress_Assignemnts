@@ -1,4 +1,4 @@
-// Implementing Stack using interfaces in Golang 
+// Implementing Stack using Slices and Pointers in Golang 
 
 
 package main

@@ -2,13 +2,22 @@ package main
 
 import "fmt"
 
-type Point struct {
-	x int 
-	y int
+func check (i interface{} , j interface{}) {
+	if(i == j){
+		fmt.Println("Is equal")
+	}else {
+		fmt.Println("Not Equak")
+	}
 }
 
+
 func main() {
-	var p1 Point = Point{1,2}
-	p1.x = 10
-	fmt.Println(p1.x)
+	var i interface{} = 90
+	var j interface{}= 89
+
+	check(i,j)
+
+	var a interface {} = "Hlo"
+	var b interface {} = "Hlo"
+	check(a,b)
 }
